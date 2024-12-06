@@ -1,0 +1,807 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Mon Nov 18 16:03:27 2024
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+                   .cinit    romdata   0x00002a    program   0x00000e
+             .code_main.o       code   0x000038    program   0x00114c
+                     PROG       code   0x001184    program   0x00054c
+               _cinit_scn       code   0x0016d0    program   0x00009e
+           .code_t0read.o       code   0x00176e    program   0x00003e
+          .code_t0write.o       code   0x0017ac    program   0x000038
+           .code_t0open.o       code   0x0017e4    program   0x000038
+             D10KTCYXCODE       code   0x00181c    program   0x00002e
+                    .code       code   0x00184a    program   0x000020
+             _startup_scn       code   0x00186a    program   0x00001c
+           .code___init.o       code   0x001886    program   0x000002
+        .romdata___init.o    romdata   0x001888    program   0x000000
+         .romdata_c018i.o    romdata   0x001888    program   0x000000
+          .romdata_main.o    romdata   0x001888    program   0x000000
+          .idata_main.o_i    romdata   0x001888    program   0x000020
+        .idata_t0open.o_i    romdata   0x001888    program   0x000000
+        .romdata_t0open.o    romdata   0x001888    program   0x000000
+        .idata_t0read.o_i    romdata   0x001888    program   0x000000
+        .romdata_t0read.o    romdata   0x001888    program   0x000000
+       .romdata_t0write.o    romdata   0x001888    program   0x000000
+       .idata_t0write.o_i    romdata   0x001888    program   0x000000
+         .idata_c018i.o_i    romdata   0x0018a8    program   0x000000
+        .idata___init.o_i    romdata   0x0018a8    program   0x000000
+            .code_c018i.o       code   0x0018a8    program   0x000000
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+                 .tmpdata      udata   0x000000       data   0x00001a
+                MATH_DATA      udata   0x00001a       data   0x000014
+                DELAYDAT2      udata   0x00002e       data   0x000001
+                DELAYDAT1      udata   0x00002f       data   0x000001
+                   .stack      udata   0x000080       data   0x000040
+            .idata_main.o      idata   0x0000c0       data   0x000020
+           .udata_c018i.o      udata   0x0000e0       data   0x00000a
+            .udata_main.o      udata   0x0000ea       data   0x000000
+           .idata_c018i.o      idata   0x0000ea       data   0x000000
+          .udata_t0open.o      udata   0x0000ea       data   0x000000
+          .idata_t0open.o      idata   0x0000ea       data   0x000000
+          .udata_t0read.o      udata   0x0000ea       data   0x000000
+          .idata_t0read.o      idata   0x0000ea       data   0x000000
+         .udata_t0write.o      udata   0x0000ea       data   0x000000
+         .idata_t0write.o      idata   0x0000ea       data   0x000000
+          .udata___init.o      udata   0x0000ea       data   0x000000
+          .idata___init.o      idata   0x0000ea       data   0x000000
+            SFR_UNBANKED0      udata   0x000f80       data   0x000080
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x00002a    0x0018a7      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+            6281 out of 16664 program addresses used, program memory utilization is 37%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   D10K_1   0x001828    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001834    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x001826    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+             Delay10KTCYx   0x00181c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                DelayPort   0x0000ac    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 FLO1632S   0x001188    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632U   0x001184    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    FPA32   0x0011b0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x0012dc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x001382    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                    FPS32   0x0011ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 FXM1616U   0x00145c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+                  INT3216   0x001498    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+    LED_Anzeige_Ozonstufe   0x0005a4    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+            LeseADWandler   0x0001d6    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+            LeseAusEEPROM   0x0006cc    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit3_TasteEinAusgeschaltetX   0x000578    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit4_Taste_Up   0x000252    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit5_CheckeDruckADCWert   0x0003d2    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit5_PortC_Bit0_Druck   0x000388    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit5_Taste_Down   0x0002e2    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 LoescheA   0x000054    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 LoescheB   0x00008e    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 LoescheC   0x0001b8    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+           LuefterEin_Aus   0x000626    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               OpenTimer0   0x0017e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+              OzonEin_Aus   0x00064c    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               ReadTimer0   0x00176e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0read.c
+         SchreibeInEEPROM   0x000698    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                   SetzeA   0x000038    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                   SetzeB   0x000072    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                   SetzeC   0x00019c    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+        StandbyLEDEin_Aus   0x000672    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                  TAGTB32   0x0014f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\gtFP.asm
+                  TALTB32   0x001508    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\ltFP.asm
+              WriteTimer0   0x0017ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+       _D10KTCYXCODE_0010   0x00182c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x001838    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+              __FpCompare   0x00151a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                 __FpExit   0x0015d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x0015fc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+            __FpReturnNaN   0x0015c4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x0015d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x0015ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x0015dc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x0015f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x0015d2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x0015ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x001654    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x001674    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x0016a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x001884    program     static                          
+       ___return_lbl00002   0x00176c    program     static                          
+       ___return_lbl00004   0x0000c4    program     static                          
+               __config_0   0x300001    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_1   0x300002    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_2   0x300003    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_3   0x300005    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_4   0x300006    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                   __init   0x001886    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+            __zero_memory   0x00184a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                _do_cinit   0x0016d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 _startup   0x00186a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                  blinker   0x0000c6    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                compare_l   0x001860    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                copy_loop   0x001742    program     static                          
+            copy_one_byte   0x001748    program     static                          
+                     done   0x00176c    program     static                          
+             done_copying   0x001756    program     static                          
+                 jANotInf   0x0012fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0011d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x0013a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotNeg   0x00126c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jANotZero   0x00130e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jAandWsetup   0x00123c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jAisNeg   0x001596    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                 jAltBexp   0x00122a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x0011ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x0011e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jBothFinite   0x0013ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x0013ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x001538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+            jDifOrPosSign   0x0011fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                      jEQ   0x001554    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jExch   0x001560    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jExit   0x0014f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                   jExpEQ   0x0015a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jFinal   0x00158a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+               jFinalSign   0x0012d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jHaveZero   0x0013b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jI2F16Beg   0x001198    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    jLoop   0x0014d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x001336    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jLoopExit   0x0014e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x0014a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0014b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0014ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                      jNE   0x001558    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jNext   0x00135c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x00135a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                  jNoExch   0x001580    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+             jNotBothZero   0x0011fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                  jNotInf   0x0014c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jPkLoop   0x00160a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x001654    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x00163c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x001626    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x0015e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jRotate   0x0015b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jShift   0x00159c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+               jShiftDone   0x001294    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x001286    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x0012c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jSignedZero   0x001304    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jSignsEQ   0x00153c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jUnpkA1   0x00167e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x001696    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x00168c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x0016ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x0016c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x0016bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x0016a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jWNotNeg   0x001280    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    jZero   0x0014be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+               jZero1and2   0x0015e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                     loop   0x00187a    program     static                          
+                   loop_h   0x001858    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   loop_l   0x001862    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     main   0x0006f2    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     test   0x0016ea    program     static                          
+               zero_block   0x001858    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     BIT0   0x0000c5       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT1   0x0000c6       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT2   0x0000c7       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT3   0x0000c8       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT4   0x0000c9       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT5   0x0000ca       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT6   0x0000cb       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT7   0x0000cc       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+            DelayCounter1   0x00002f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+            DelayCounter2   0x00002e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+             ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ECCPAS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ECCPASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     SIGN   0x00001a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 __AARGB0   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000021       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000020       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x000028       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x000027       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x000026       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x000025       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x000029       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __TEMP   0x00002d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x00002d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x00002c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x00002b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB3   0x00002a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_0   0x000000       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0read.c
+                  __tmp_0   0x000000       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               cPORTA_Out   0x0000c2       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               cPORTB_Out   0x0000c3       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               cPORTC_Out   0x0000c4       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+         cWandlerPingPong   0x0000cd       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                curr_byte   0x0000e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000e5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000e7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              iInitFilter   0x0000d8       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+          iTasteGedrueckt   0x0000d4       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     prom   0x0000e0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+             suPegelDruck   0x0000d2       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+             suPegelPT100   0x0000d0       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                suZaehler   0x0000ce       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+           uADCFilterWert   0x0000d6       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+    uDruckschalterWertADC   0x0000c0       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+          uOzonEinOderAus   0x0000de       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+      uSchwellWertADC_Off   0x0000dc       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+       uSchwellWertADC_On   0x0000da       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   SetzeA   0x000038    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 LoescheA   0x000054    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                   SetzeB   0x000072    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 LoescheB   0x00008e    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                DelayPort   0x0000ac    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+       ___return_lbl00004   0x0000c4    program     static                          
+                  blinker   0x0000c6    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                   SetzeC   0x00019c    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 LoescheC   0x0001b8    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+            LeseADWandler   0x0001d6    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit4_Taste_Up   0x000252    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit5_Taste_Down   0x0002e2    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit5_PortC_Bit0_Druck   0x000388    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit5_CheckeDruckADCWert   0x0003d2    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+LeseTastePortB_Bit3_TasteEinAusgeschaltetX   0x000578    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+    LED_Anzeige_Ozonstufe   0x0005a4    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+           LuefterEin_Aus   0x000626    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+              OzonEin_Aus   0x00064c    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+        StandbyLEDEin_Aus   0x000672    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+         SchreibeInEEPROM   0x000698    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+            LeseAusEEPROM   0x0006cc    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     main   0x0006f2    program     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                 FLO1632U   0x001184    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                 FLO1632S   0x001188    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                jI2F16Beg   0x001198    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cast16FP.asm
+                    FPS32   0x0011ae    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPA32   0x0011b0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jBANotInf   0x0011ce    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotInf   0x0011d8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jBNotInf   0x0011e6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+            jDifOrPosSign   0x0011fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+             jNotBothZero   0x0011fe    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jAltBexp   0x00122a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+              jAandWsetup   0x00123c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jANotNeg   0x00126c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                 jWNotNeg   0x001280    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftLoop   0x001286    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jShiftDone   0x001294    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                jSignDone   0x0012c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+               jFinalSign   0x0012d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\addFP.asm
+                    FPD32   0x0012dc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                 jANotInf   0x0012fa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+              jSignedZero   0x001304    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jANotZero   0x00130e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jLoop   0x001336    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                jNoAdjust   0x00135a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    jNext   0x00135c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\divFP.asm
+                    FPM32   0x001382    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 jANotInf   0x0013a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+              jBothFinite   0x0013ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                jHaveZero   0x0013b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+             jBothNotZero   0x0013ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\mulFP.asm
+                 FXM1616U   0x00145c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616u.asm
+                  INT3216   0x001498    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                     jMax   0x0014a8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxPos   0x0014ac    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jMaxNeg   0x0014b6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jZero   0x0014be    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  jNotInf   0x0014c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jLoop   0x0014d4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                jLoopExit   0x0014e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                    jExit   0x0014f4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\castFP16.asm
+                  TAGTB32   0x0014f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\gtFP.asm
+                  TALTB32   0x001508    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\ltFP.asm
+              __FpCompare   0x00151a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+             jBothNotZero   0x001538    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                 jSignsEQ   0x00153c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                      jEQ   0x001554    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                      jNE   0x001558    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                    jExch   0x001560    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jNoExch   0x001580    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jFinal   0x00158a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jAisNeg   0x001596    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jShift   0x00159c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                   jExpEQ   0x0015a6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+                  jRotate   0x0015b2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\compFP.asm
+            __FpReturnNaN   0x0015c4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpExit   0x0015d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnSignInf   0x0015d2    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnNegInf   0x0015d6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+         __FpReturnPosInf   0x0015dc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+           jReturnPosInf0   0x0015e0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jZero1and2   0x0015e4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+       __FpReturnSignZero   0x0015ea    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnNegZero   0x0015ee    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+        __FpReturnPosZero   0x0015f6    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                 __FpPack   0x0015fc    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+                  jPkLoop   0x00160a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkShiftDone   0x001626    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+               jPkRoundIt   0x00163c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpReturnW   0x001654    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+             jPkRoundDone   0x001654    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\packFP.asm
+              __FpUnPackA   0x001674    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA1   0x00167e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkANZ   0x00168c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkA2   0x001696    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkNaN   0x0016a0    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+              __FpUnPackB   0x0016a4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB1   0x0016ae    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                 jUnpkBNZ   0x0016bc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                  jUnpkB2   0x0016c6    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\UnpackFP.asm
+                _do_cinit   0x0016d0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x0016ea    program     static                          
+                copy_loop   0x001742    program     static                          
+            copy_one_byte   0x001748    program     static                          
+             done_copying   0x001756    program     static                          
+       ___return_lbl00002   0x00176c    program     static                          
+                     done   0x00176c    program     static                          
+               ReadTimer0   0x00176e    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0read.c
+              WriteTimer0   0x0017ac    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0write.c
+               OpenTimer0   0x0017e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0open.c
+             Delay10KTCYx   0x00181c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kx   0x001826    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                   D10K_1   0x001828    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_0010   0x00182c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+                    D10Kl   0x001834    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+       _D10KTCYXCODE_001C   0x001838    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\d10ktcyx.asm
+            __zero_memory   0x00184a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   loop_h   0x001858    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               zero_block   0x001858    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                compare_l   0x001860    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   loop_l   0x001862    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 _startup   0x00186a    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x00187a    program     static                          
+       ___return_lbl00001   0x001884    program     static                          
+                   __init   0x001886    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+               __config_0   0x300001    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_1   0x300002    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_2   0x300003    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_3   0x300005    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               __config_4   0x300006    program     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                  __tmp_0   0x000000       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                  __tmp_0   0x000000       data     static E:\3.46\pic18-lt\cxx-framework\src\pmc_common\Timers\t0read.c
+                     SIGN   0x00001a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00001b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB3   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x00001c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x00001d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x00001e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x00001f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000020       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000021       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000022       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000023       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x000024       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x000025       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x000026       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x000027       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x000028       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x000029       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __TEMPB3   0x00002a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x00002b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x00002c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x00002d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                   __TEMP   0x00002d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+            DelayCounter2   0x00002e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd2.asm
+            DelayCounter1   0x00002f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\delays\delayd1.asm
+    uDruckschalterWertADC   0x0000c0       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               cPORTA_Out   0x0000c2       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               cPORTB_Out   0x0000c3       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+               cPORTC_Out   0x0000c4       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT0   0x0000c5       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT1   0x0000c6       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT2   0x0000c7       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT3   0x0000c8       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT4   0x0000c9       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT5   0x0000ca       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT6   0x0000cb       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     BIT7   0x0000cc       data     extern M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+         cWandlerPingPong   0x0000cd       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                suZaehler   0x0000ce       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+             suPegelPT100   0x0000d0       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+             suPegelDruck   0x0000d2       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+          iTasteGedrueckt   0x0000d4       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+           uADCFilterWert   0x0000d6       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+              iInitFilter   0x0000d8       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+       uSchwellWertADC_On   0x0000da       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+      uSchwellWertADC_Off   0x0000dc       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+          uOzonEinOderAus   0x0000de       data     static M:\04_Entwicklung\06_OEM_Traenkle\Ozongenerator\Tesla Air\Software\Ozongenerator_Mit_ADC_Druckschalter_V3.6\Ozongenerator_Mit_ADC_Druckschalter\main.c
+                     prom   0x0000e0       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0000e3       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0000e5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0000e7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PORTE   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                PORTEbits   0x000f84       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                CMCONbits   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    CMCON   0x000fb4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               CVRCONbits   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CVRCON   0x000fb5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ECCPASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ECCPAS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+             ECCP1DELbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 ECCP1DEL   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              CCP2CONbits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  CCP2CON   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    CCPR2   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR2L   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR2H   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               LVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   LVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              HLVDCONbits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  HLVDCON   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f2420.asm
+
+

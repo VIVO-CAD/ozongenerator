@@ -1,0 +1,4 @@
+C:/Users/christian.mack/241206_Tesla_Air_Ozongenerator_Mit_ADC_Druckschalter_V3.6/_build/Ozongenerator/default/CMakeFiles/Ozongenerator_default_compile.dir
+C:/Users/christian.mack/241206_Tesla_Air_Ozongenerator_Mit_ADC_Druckschalter_V3.6/_build/Ozongenerator/default/CMakeFiles/Ozongenerator_default_default.elf.dir
+C:/Users/christian.mack/241206_Tesla_Air_Ozongenerator_Mit_ADC_Druckschalter_V3.6/_build/Ozongenerator/default/CMakeFiles/edit_cache.dir
+C:/Users/christian.mack/241206_Tesla_Air_Ozongenerator_Mit_ADC_Druckschalter_V3.6/_build/Ozongenerator/default/CMakeFiles/rebuild_cache.dir

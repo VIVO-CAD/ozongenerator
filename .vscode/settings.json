@@ -1,0 +1,8 @@
+{
+    "mplab.clangd.arguments": [
+        "--compile-commands-dir=c:\\Users\\christian.mack\\241206_Tesla_Air_Ozongenerator_Mit_ADC_Druckschalter_V3.6\\_build\\Ozongenerator\\default"
+    ],
+    "mplab.clangd.path": "",
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "cmake.sourceDirectory": "C:/Users/christian.mack/241206_Tesla_Air_Ozongenerator_Mit_ADC_Druckschalter_V3.6/cmake/Ozongenerator/default"
+}

@@ -1,0 +1,91 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+BIT0	C:\cprogs_Pics\Ozongenerator\main.c	45;"	v	line:45
+BIT1	C:\cprogs_Pics\Ozongenerator\main.c	46;"	v	line:46
+BIT2	C:\cprogs_Pics\Ozongenerator\main.c	47;"	v	line:47
+BIT3	C:\cprogs_Pics\Ozongenerator\main.c	48;"	v	line:48
+BIT4	C:\cprogs_Pics\Ozongenerator\main.c	49;"	v	line:49
+BIT5	C:\cprogs_Pics\Ozongenerator\main.c	50;"	v	line:50
+BIT6	C:\cprogs_Pics\Ozongenerator\main.c	51;"	v	line:51
+BIT7	C:\cprogs_Pics\Ozongenerator\main.c	52;"	v	line:52
+DelayPort	C:\cprogs_Pics\Ozongenerator\main.c	322;"	f	line:322	signature:(void)
+EEPROM_KANALZAHL::253	C:\cprogs_Pics\Ozongenerator\main.c	573;"	d	line:573	file:
+GebeByteAus	C:\cprogs_Pics\Ozongenerator\main.c	343;"	f	line:343	signature:(char cByte, char cPortABit1)
+GebePraeambelAus	C:\cprogs_Pics\Ozongenerator\main.c	470;"	f	line:470	signature:(char cPortABit1)
+LED_Anzeige_Ozonstufe	C:\cprogs_Pics\Ozongenerator\main.c	229;"	f	line:229	signature:(char cOzonstufe, char cLEDAus)
+LeseADWandler	C:\cprogs_Pics\Ozongenerator\main.c	293;"	f	line:293	signature:(void)
+LeseAusEEPROM	C:\cprogs_Pics\Ozongenerator\main.c	552;"	f	line:552	signature:(char cAdresse)
+LeseTastePortB_Bit4_Taste_Up	C:\cprogs_Pics\Ozongenerator\main.c	121;"	f	line:121	signature:(void)
+LeseTastePortB_Bit5_Taste_Down	C:\cprogs_Pics\Ozongenerator\main.c	164;"	f	line:164	signature:(void)
+LeseTastePortB_Bit6_7_Druck	C:\cprogs_Pics\Ozongenerator\main.c	207;"	f	line:207	signature:(void)
+LoescheA	C:\cprogs_Pics\Ozongenerator\main.c	70;"	f	line:70	signature:(char cBit)
+LoescheB	C:\cprogs_Pics\Ozongenerator\main.c	90;"	f	line:90	signature:(char cBit)
+LoescheC	C:\cprogs_Pics\Ozongenerator\main.c	110;"	f	line:110	signature:(char cBit)
+LuefterEin_Aus	C:\cprogs_Pics\Ozongenerator\main.c	277;"	f	line:277	signature:(char cLuefterEinAus)
+MAXANZ_KANAELE::512	C:\cprogs_Pics\Ozongenerator\main.c	566;"	d	line:566	file:
+SchreibeInEEPROM	C:\cprogs_Pics\Ozongenerator\main.c	531;"	f	line:531	signature:(char cAdresse, char cWert)
+SetzeA	C:\cprogs_Pics\Ozongenerator\main.c	60;"	f	line:60	signature:(char cBit)
+SetzeB	C:\cprogs_Pics\Ozongenerator\main.c	80;"	f	line:80	signature:(char cBit)
+SetzeC	C:\cprogs_Pics\Ozongenerator\main.c	100;"	f	line:100	signature:(char cBit)
+blinker	C:\cprogs_Pics\Ozongenerator\main.c	495;"	f	line:495	signature:(unsigned char ucZaehler, char cImmer)
+buffer	C:\cprogs_Pics\Ozongenerator\main.c	570;"	v	line:570	file:
+cAbschnitt	C:\cprogs_Pics\Ozongenerator\main.c	593;"	l	line:593
+cAdresse	C:\cprogs_Pics\Ozongenerator\main.c	591;"	l	line:591
+cBit0	C:\cprogs_Pics\Ozongenerator\main.c	351;"	l	line:351
+cBit1	C:\cprogs_Pics\Ozongenerator\main.c	352;"	l	line:352
+cBit2	C:\cprogs_Pics\Ozongenerator\main.c	353;"	l	line:353
+cBit3	C:\cprogs_Pics\Ozongenerator\main.c	354;"	l	line:354
+cBit4	C:\cprogs_Pics\Ozongenerator\main.c	356;"	l	line:356
+cBit5	C:\cprogs_Pics\Ozongenerator\main.c	357;"	l	line:357
+cBit6	C:\cprogs_Pics\Ozongenerator\main.c	359;"	l	line:359
+cBit7	C:\cprogs_Pics\Ozongenerator\main.c	361;"	l	line:361
+cEndlos	C:\cprogs_Pics\Ozongenerator\main.c	498;"	l	line:498
+cKombiReset	C:\cprogs_Pics\Ozongenerator\main.c	347;"	l	line:347
+cKombiReset	C:\cprogs_Pics\Ozongenerator\main.c	473;"	l	line:473
+cKombiSet	C:\cprogs_Pics\Ozongenerator\main.c	346;"	l	line:346
+cKombiSet	C:\cprogs_Pics\Ozongenerator\main.c	472;"	l	line:472
+cOzonstufe	C:\cprogs_Pics\Ozongenerator\main.c	598;"	l	line:598
+cPORTA_Out	C:\cprogs_Pics\Ozongenerator\main.c	42;"	v	line:42
+cPORTB_Out	C:\cprogs_Pics\Ozongenerator\main.c	43;"	v	line:43
+cPORTC_Out	C:\cprogs_Pics\Ozongenerator\main.c	44;"	v	line:44
+cPortBit	C:\cprogs_Pics\Ozongenerator\main.c	125;"	l	line:125
+cPortBit	C:\cprogs_Pics\Ozongenerator\main.c	168;"	l	line:168
+cPortBitRB6	C:\cprogs_Pics\Ozongenerator\main.c	209;"	l	line:209
+cPortBitRB7	C:\cprogs_Pics\Ozongenerator\main.c	210;"	l	line:210
+cStartBit	C:\cprogs_Pics\Ozongenerator\main.c	348;"	l	line:348
+cStopBit	C:\cprogs_Pics\Ozongenerator\main.c	349;"	l	line:349
+cToggle	C:\cprogs_Pics\Ozongenerator\main.c	588;"	l	line:588
+cWert	C:\cprogs_Pics\Ozongenerator\main.c	554;"	l	line:554
+cZeitintervall	C:\cprogs_Pics\Ozongenerator\main.c	592;"	l	line:592
+fMaxTemperatur	C:\cprogs_Pics\Ozongenerator\main.c	600;"	l	line:600
+fPT100SpannungsteilerR	C:\cprogs_Pics\Ozongenerator\main.c	603;"	l	line:603
+fPT100Widerstand	C:\cprogs_Pics\Ozongenerator\main.c	602;"	l	line:602
+fTemperatur	C:\cprogs_Pics\Ozongenerator\main.c	601;"	l	line:601
+i	C:\cprogs_Pics\Ozongenerator\main.c	497;"	l	line:497
+i	C:\cprogs_Pics\Ozongenerator\main.c	587;"	l	line:587
+iTasteGedrueckt	C:\cprogs_Pics\Ozongenerator\main.c	123;"	l	line:123	file:
+iTasteGedrueckt	C:\cprogs_Pics\Ozongenerator\main.c	166;"	l	line:166	file:
+main	C:\cprogs_Pics\Ozongenerator\main.c	576;"	f	line:576	signature:(void)
+pcKanaele	C:\cprogs_Pics\Ozongenerator\main.c	580;"	l	line:580
+suPegel	C:\cprogs_Pics\Ozongenerator\main.c	299;"	l	line:299	file:
+suZaehler	C:\cprogs_Pics\Ozongenerator\main.c	295;"	l	line:295	file:
+test	C:\cprogs_Pics\Ozongenerator\main.c	590;"	l	line:590
+ucData	C:\cprogs_Pics\Ozongenerator\main.c	589;"	l	line:589
+ucKanal	C:\cprogs_Pics\Ozongenerator\main.c	584;"	l	line:584
+ucLetzterModus	C:\cprogs_Pics\Ozongenerator\main.c	579;"	l	line:579
+ucModus	C:\cprogs_Pics\Ozongenerator\main.c	578;"	l	line:578
+ucPT100WertADC	C:\cprogs_Pics\Ozongenerator\main.c	599;"	l	line:599
+uiAbschnittTimer	C:\cprogs_Pics\Ozongenerator\main.c	595;"	l	line:595
+uiKanal	C:\cprogs_Pics\Ozongenerator\main.c	583;"	l	line:583
+uiKanalSpeicherGrenze	C:\cprogs_Pics\Ozongenerator\main.c	585;"	l	line:585
+uiKanalzaehler	C:\cprogs_Pics\Ozongenerator\main.c	582;"	l	line:582
+uiKanalzahl	C:\cprogs_Pics\Ozongenerator\main.c	581;"	l	line:581
+uiTimer	C:\cprogs_Pics\Ozongenerator\main.c	594;"	l	line:594
+ulDauerzaehler	C:\cprogs_Pics\Ozongenerator\main.c	124;"	l	line:124
+ulDauerzaehler	C:\cprogs_Pics\Ozongenerator\main.c	167;"	l	line:167
